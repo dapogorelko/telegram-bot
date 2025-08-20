@@ -68,7 +68,7 @@ def export_to_excel(chat_id):
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     file_name = f"RWA_result_{timestamp}.xlsx"
-    filepath = os.path.join("/tmp", file_name)
+    filepath = file_name
 
     workbook = xlsxwriter.Workbook(filepath)
     worksheet = workbook.add_worksheet("RWA Result")
